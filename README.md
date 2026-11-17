@@ -2,7 +2,7 @@
 
 **Topik:** Pencarian Sumber Neutrino Titik _Time-Integrated_ pada Blazar **TXS 0506+056** dan **PKS 1424+240** menggunakan Rilis Data Publik IceCube 10 Tahun (2008–2018).
 
-## Anggota & Peran (Minggu 1–2)
+## Anggota & Peran 
 
 1. **[Rahma Cahya Ariani]** — Koordinator
 2. **[Zela Yusiana]** — Analis Data
