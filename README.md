@@ -4,11 +4,11 @@
 
 ## Anggota & Peran (Minggu 1–2)
 
-1. **[Nama Kamu]** — Koordinator
-2. **[Nama Anggota 2]** — Analis Data
-3. **[Nama Anggota 3]** — Analis Statistik
-4. **[Nama Anggota 4]** — Analis Fisika
-5. **[Nama Anggota 5]** — Penjamin Mutu
+1. **[Rahma Cahya Ariani]** — Koordinator
+2. **[Zela Yusiana]** — Analis Data
+3. **[Aisyawarya Pramasti]** — Analis Statistik
+4. **[Raja Nurul]** — Analis Fisika
+5. **[Qayyuma Nurhaliza]** — Penjamin Mutu
 
 ## Cara Menjalankan Lingkungan Komputasi
 
