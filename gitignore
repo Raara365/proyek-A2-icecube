@@ -1,0 +1,10 @@
+# Lingkungan virtual Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Abaikan data mentah berukuran besar (cukup catat checksum-nya di logs/)
+data/raw/*
+!data/raw/.gitkeep
