@@ -15,46 +15,10 @@
 | Tanggal | Pertemuan | Anggota Hadir | Apa yang Dikerjakan | Keputusan atau Masalah |
 | :--- | :--- | :--- | :--- | :--- |
 | [11/11/2026] | Minggu 1 — Sesi 1 (Kick-off & Gerbang 0) | Semua (5 orang) | Pembagian peran tim, pembuatan repositori GitHub `proyek-A2-icecube`, penyeragaman lingkungan Python (`.venv` & `requirements.txt`), serta pembacaan menyeluruh `README` dataset untuk menjawab 8 pertanyaan Gerbang 0. | **Keputusan:** Struktur folder standar disepakati; radius pencarian awal ditetapkan $\psi_{\max} = 5,0^\circ$ dengan $40$ bin $\sin\delta$. **Masalah:** Belum ada. |
-| [Tgl/Bln/2026] | Minggu 1 — Sesi 2 (Audit Data & Gerbang 1) | Semua (5 orang) | Verifikasi checksum SHA-256 dataset mentah, audit data seluruh musim (`data_quality_log_v1.md`), verifikasi koordinat J2000 TXS 0506+056 & PKS 1424+240 via SIMBAD/NED, pembuatan 3 grafik awal, dan finalisasi PDF Rencana Analisis (1 halaman). | **Keputusan:** Seluruh syarat Gerbang G0 dan G1 terpenuhi (Tonggak M1 selesai); siap masuk tahap pemodelan di Minggu 2. **Masalah:** [Catat bila ada perbedaan format kolom di README]. |
+| [13/11/2026] | Minggu 1 — Sesi 2 (Audit Data & Gerbang 1) | Semua (5 orang) | Verifikasi checksum SHA-256 dataset mentah, audit data seluruh musim (`data_quality_log_v1.md`), verifikasi koordinat J2000 TXS 0506+056 & PKS 1424+240 via SIMBAD/NED, pembuatan 3 grafik awal, dan finalisasi PDF Rencana Analisis (1 halaman). | **Keputusan:** Seluruh syarat Gerbang G0 dan G1 terpenuhi (Tonggak M1 selesai); siap masuk tahap pemodelan di Minggu 2. **Masalah:** [Catat bila ada perbedaan format kolom di README]. |
 | [Tgl/Bln/2026] | Minggu 2 — Sesi 3 (Model Latar & Uji Data Tiruan) | Semua (5 orang) | Implementasi kerapatan latar $B(\delta)$ dan prosedur *scrambling* RA; pengujian fungsi *likelihood* posisi dan *Test Statistic* ($TS$) pada data isotropik tiruan untuk memastikan sekitar $50\% - 60\%$ iterasi menghasilkan $TS = 0$. | **Keputusan:** Menggunakan *random seed* tetap (`seed=42`) untuk konsistensi pengujian. **Masalah:** [Catat kendala waktu komputasi *pseudo-experiment* jika ada]. |
 | [Tgl/Bln/2026] | Minggu 2 — Sesi 4 (Integrasi Pipeline & Gerbang 2) | Semua (5 orang) | Integrasi kode pemuatan data dan statistik menjadi satu *notebook* berurutan (`02_pipeline_minimum_A2.ipynb`); perhitungan $TS_{\text{obs}}$, $\hat{n}_s$, *p-value* pra-trial & pasca-trial (2 sumber); verifikasi silang 1 angka kunci lewat hitungan manual; finalisasi draf Data & Metode (2 halaman). | **Keputusan:** Lolos Gerbang G2 (Tonggak M2 selesai) dan siap dipresentasikan pada *check-in* dosen. **Masalah:** [Catat masukan dosen saat *check-in*]. |
 | [Tgl/Bln/2026] | Minggu 3 — Sesi 5 (Ketidakpastian & Analisis Per Musim) | Semua (5 orang) | Perhitungan interval kepercayaan $\hat{n}_s$ dengan profil *likelihood*, uji kepekaan variasi radius & jumlah bin, serta analisis $TS$ / $\hat{n}_s$ per musim untuk menguji efek pembaruan pemrosesan data 2012–2015 pada TXS 0506+056 (ditambah suku energi tingkat lanjut bila memungkinkan). | **Keputusan:** Seluruh angka keluaran kode disimpan otomatis ke `results/tables/hasil_utama.json`. **Masalah:** [Catat perbedaan hasil dengan publikasi untuk dibahas di bagian Validasi]. |
 | [Tgl/Bln/2026] | Minggu 3 — Sesi 6 (Validasi & Code Freeze Gerbang 3) | Semua (5 orang) | Penyusunan tabel validasi terhadap publikasi `arXiv:2101.09836` dan *Science* 2018; pemeriksaan keterlacakan setiap angka di draf laporan lengkap dan draf poster; pembekuan *notebook* versi `v1.0` (*code freeze*) untuk diserahkan ke Kelompok A1. | **Keputusan:** Lolos Gerbang G3 (Tonggak M3 selesai); paket replikasi resmi dikirim ke Kelompok A1. **Masalah:** Belum ada. |
 | [Tgl/Bln/2026] | Minggu 4 — Sesi 7 (Replikasi Silang A3 & Perbaikan A1) | Semua (5 orang) | Menjalankan protokol 5 tahap replikasi terhadap *notebook* Kelompok A3 (skan seluruh langit) termasuk penghitungan ulang independen satu angka kunci; menyusun Laporan Replikasi (1 halaman, Lampiran E); menindaklanjuti masukan replikasi dari Kelompok A1. | **Keputusan:** Perubahan perbaikan dari masukan A1 dicatat dan *notebook* dibekukan ulang menjadi versi `v2.0`. **Masalah:** [Catat temuan minor/penting saat mereplikasi kode A3]. |
 | [Tgl/Bln/2026] | Minggu 4 — Sesi 8 (Finalisasi Poster & Simposium Gerbang 4) | Semua (5 orang) | Finalisasi poster A1 potret dan laporan akhir (6–8 halaman); simulasi presentasi lisan 3 menit serta latihan tanya jawab *Komite Nobel mini* untuk seluruh anggota; persiapan pengumpulan akhir (log kerja, refleksi individu, dan penilaian sejawat). | **Keputusan:** Seluruh syarat Gerbang G4 (Tonggak M4) terpenuhi siap dikumpulkan pada $H+1$ setelah simposium. **Masalah:** Belum ada. |
-
----
-
-## Berita Acara Singkat Tiap Pertemuan (Untuk Dokumentasi Internal)
-
-### Minggu 1: Fondasi Data & Pra-Registrasi
-* **Pertemuan 1 (Kick-off & Gerbang 0):**
-  * **Agenda:** Pembagian peran 5 anggota, inisiasi repositori GitHub `proyek-A2-icecube`, penyeragaman lingkungan Python, dan bedah `README` dataset.
-  * **Capaian:** Jawaban 8 pertanyaan wajib Gerbang 0 terdokumentasi di `logs/gerbang_0_readme.md`. Parameter pra-registrasi disepakati ($\psi_{\max} = 5,0^\circ$, $40$ bin $\sin\delta$).
-* **Pertemuan 2 (Audit Data & Gerbang 1):**
-  * **Agenda:** Pengecekan integritas file mentah, verifikasi koordinat katalog astronomi, dan peninjauan 3 grafik awal.
-  * **Capaian:** File `checksum_data_mentah.txt` dan `data_quality_log_v1.md` terisi. Koordinat J2000 presisi **TXS 0506+056** dan **PKS 1424+240** dari SIMBAD/NED resmi dikunci dalam `Rencana_Analisis_A2.pdf` (1 halaman). Tiga gambar awal tersimpan di `results/figures/`.
-
-### Minggu 2: Model & Pipeline End-to-End
-* **Pertemuan 3 (Model Latar & Uji Data Tiruan):**
-  * **Agenda:** Evaluasi fungsi kerapatan latar $B(\delta)$ dan pengujian fungsi *Test Statistic* ($TS$) pada data isotropik buatan.
-  * **Capaian:** Distribusi $TS$ pada data tanpa sinyal terbukti mengikuti campuran $\frac{1}{2}\chi_0^2 + \frac{1}{2}\chi_1^2$ (sekitar separuh bernilai nol), memastikan rumus *likelihood* bebas dari galat satuan derajat/radian.
-* **Pertemuan 4 (Integrasi Pipeline & Gerbang 2):**
-  * **Agenda:** Penggabungan kode audit dan kode statistik menjadi satu alur kerja otomatis, serta pencocokan hitungan manual.
-  * **Capaian:** *Notebook* tingkat minimum berjalan dari awal hingga akhir tanpa intervensi manual, menghasilkan angka $TS_{\text{obs}}$, $\hat{n}_s$, dan signifikansi pra-/pasca-trial untuk dua sumber. Satu angka kunci terverifikasi cocok dengan hitungan manual Analis Fisika. Draf bagian *Data dan Metode* (2 halaman) selesai.
-
-### Minggu 3: Analisis Penuh, Ketidakpastian, & Pembekuan Kode
-* **Pertemuan 5 (Ketidakpastian, Kepekaan, & Analisis Per Musim):**
-  * **Agenda:** Penentuan interval kepercayaan $\hat{n}_s$, uji kepekaan pilihan bin/radius, dan telaah khusus Jalur A2 mengenai efek pembaruan pemrosesan data April 2012–Mei 2015.
-  * **Capaian:** Grafik tren $TS$ dan $\hat{n}_s$ per musim berhasil dibuat untuk mengevaluasi stabilitas sinyal TXS 0506+056 antar periode detektor.
-* **Pertemuan 6 (Validasi & Code Freeze Gerbang 3):**
-  * **Agenda:** Pembandingan hasil kelompok dengan literatur, audit keterlacakan angka laporan, dan pembekuan kode.
-  * **Capaian:** Tabel validasi dan jawaban pertanyaan wajib (termasuk efek binning kasar respons detektor) masuk ke draf laporan lengkap. *Notebook* dibekukan pada versi `v1.0` dan paket replikasi diserahkan ke Kelompok A1.
-
-### Minggu 4: Replikasi Silang & Mini-Simposium
-* **Pertemuan 7 (Sesi Replikasi Kelompok A3 & Tanggapan Replikasi A1):**
-  * **Agenda:** Eksekusi kode milik Kelompok A3 (skan seluruh langit) dan evaluasi catatan perbaikan dari Kelompok A1 terhadap kode A2.
-  * **Capaian:** Laporan Replikasi 1 halaman untuk Kelompok A3 diserahkan tepat waktu. Masukan dari Kelompok A1 ditindaklanjuti dengan pembekuan ulang *notebook* ke versi `v2.0`.
-* **Pertemuan 8 (Gladi Simposium & Gerbang 4):**
-  * **Agenda:** Pemeriksaan akhir poster ukuran A1 potret, laporan akhir (6–8 halaman), dan simulasi tanya jawab *Komite Nobel mini*.
-  * **Capaian:** Seluruh anggota menguasai alur penjelasan lisan 3 menit dan siap menjawab pertanyaan acak dari penguji. Seluruh berkas akhir siap diunggah pada $H+1$ setelah simposium.
