@@ -1,1 +1,26 @@
+# Catatan Gerbang 0: Verifikasi README Dataset (Jalur A2)
+**Dataset:** All-sky point-source IceCube data: years 2008–2018 (`PS-IC40-IC86_VII`)
+**Versi README:** Last Update 28 January 2021 (`arXiv:2101.09836`)
 
+---
+
+## Jawaban 8 Pertanyaan Wajib Gerbang 0 (Bab 7.5 Panduan)
+
+| No | Pertanyaan Gerbang 0 | Jawaban Lengkap dari README Dataset | Bagian Sumber di README |
+| :--- | :--- | :--- | :--- |
+| **1** | **Berapa berkas, apa pembagiannya (per musim/periode), dan berapa baris tiap berkas?** | Dataset mencakup periode 2008 (`IC40`) hingga musim semi 2018 (`IC86-2017`) yang terbagi dalam 3 folder utama:<br>• Folder `events/`: 10 berkas CSV per musim pengamatan (`IC40`, `IC59`, `IC79`, `IC86-2011` s.d. `IC86-2017`). *(Jumlah baris eksak tiap file dicatat Analis Data pada `data_quality_log_v1.md`)*.<br>• Folder `uptime/`: daftar *good run* (`MJD_start`, `MJD_stop`) per musim.<br>• Folder `irfs/`: tabel CSV dan plot PDF luas efektif serta *smearing matrix* dari `IC40` hingga `IC86-2012` (musim `IC86-2012` dipakai ulang untuk `IC86-2013` s.d. `IC86-2017`). | Bagian *Experimental data events*, *Detector uptime*, & *Instrument response functions* |
+| **2** | **Apa nama dan satuan tiap kolom?** | Nama kolom persis pada berkas `events`:<br>• `MJD`: waktu interaksi (UT1) dalam satuan **hari** (presisi $10^{-8}$ hari).<br>• `log10(E/GeV)`: logaritma basis 10 energi muon terekonstruksi (satuan **$\log_{10}(\text{GeV})$**).<br>• `AngErr[deg]`: estimasi ketidakpastian arah rekonstruksi dalam **derajat**.<br>• `RA[deg]`, `Dec[deg]`: *Right Ascension* dan Deklinasi J2000 dalam **derajat**.<br>• `Azimuth[deg]`, `Zenith[deg]`: koordinat lokal detektor dalam **derajat**. | Bagian *Experimental data events* |
+| **3** | **Apa makna kolom galat sudut? (1$\sigma$, radius 50%, atau lainnya?)** | `AngErr[deg]` adalah ketidakpastian arah rekonstruksi yang diasumsikan simetris dalam azimut dan zenit, dikalibrasi menggunakan simulasi untuk fluks hukum pangkat $E^{-2}$ agar memberikan *coverage* Gaussian 2D yang tepat (mengikuti prosedur Braun et al., *Astropart. Phys.* 29, 299 [6]). Terdapat batas bawah (*floor*) sebesar **$0,2^\circ$**. Nilai ini langsung dipakai sebagai $\sigma_i$ tanpa faktor konversi $1,1774$. | Bagian *Experimental data events* |
+| **4** | **Apakah energi yang tercantum adalah energi sejati neutrino, energi terekonstruksi muon, atau energi terdeposit?** | Kolom `log10(E/GeV)` pada tabel *event* adalah **energi terekonstruksi muon** yang melintasi detektor (mengikuti metode *unfolding* pada JINST 9, P03009 [5]), **bukan** energi sejati neutrino ($E_\nu$). Energi sejati neutrino (`E_nu`) hanya dipakai pada sumbu bin tabel $A_{\text{eff}}$ dan *smearing matrix*. | Bagian *Experimental data events* & *Effective Areas* |
+| **5** | **Sistem koordinat apa yang dipakai?** | Sistem koordinat **Ekuatorial J2000** (`RA[deg]` dan `Dec[deg]`) untuk arah datang kosmik, serta koordinat lokal detektor (`Azimuth[deg]` dan `Zenith[deg]`). | Bagian *Experimental data events* |
+| **6** | **Satuan luas efektif ($\text{cm}^2$ atau $\text{m}^2$) dan definisi bin energi serta deklinasi?** | Satuan luas efektif adalah **$\text{cm}^2$** (`A_Eff[cm^2]`), dirata-ratakan pada rentang energi sejati neutrino **$100\text{ GeV}$ hingga $100\text{ PeV}$** dengan batas bin `log10(E_nu/GeV)_min`, `log10(E_nu/GeV)_max` dan batas bin deklinasi sejati `Dec_nu_min[deg]`, `Dec_nu_max[deg]`. | Bagian *Effective Areas* |
+| **7** | **Apakah ada keterbatasan penggunaan yang dinyatakan?** | 1. Rilis ini menggantikan data tahun 2012 ke bawah dan **tidak boleh digabung** dengan rilis data IceCube lainnya.<br>2. Dirancang untuk pencarian sumber titik *time-integrated* (luas efektif seragam dalam RA untuk skala waktu $> 1$ hari; variasi azimut $\sim 10\%$ diabaikan untuk jangka panjang).<br>3. Terdapat **1 event duplikat** pada musim `IC86-2015` (dikonfirmasi tidak berkontribusi pada kelebihan sinyal signifikan).<br>4. Pada periode `IC86-2012` s.d. `IC86-2014`, dua *event* mirip *cascade* berenergi besar di dekat **TXS 0506+056** dihapus karena tidak sesuai rekonstruksi *track*, sehingga *p-value* kilatan 2014–2015 berubah dari $7,0 \times 10^{-5}$ menjadi $8,1 \times 10^{-3}$. | Bagian pembuka & *Experimental data events* |
+| **8** | **Apakah ada skrip, hasil acuan, atau angka benchmark untuk validasi?** | Sampel ini menunjukkan bukti **kelebihan kumulatif** dari empat sumber (**NGC 1068**, **TXS 0506+056**, **PKS 1424+240**, dan **GB6 J1542+6129**) dari katalog 110 sumber potensial, dengan NGC 1068 sebagai *hotspot* terpanas di langit utara (`arXiv:2101.09836` [1] dan *PRL* 124, 051103 [2]). | Bagian pembuka & *References* |
+
+---
+
+## Checklist Keputusan Gerbang G0
+- [x] Seluruh berkas data titik sumber 2008–2018 dapat dibuka dan terbaca tanpa galat.
+- [x] Variabel wajib (`MJD`, `log10(E/GeV)`, `AngErr[deg]`, `RA[deg]`, `Dec[deg]`) lengkap tersedia dan terdefinisi di README.
+- [x] Satuan (derajat) dan definisi `AngErr[deg]` (Gaussian 2D terkalibrasi $E^{-2}$, batas bawah $0,2^\circ$) sudah diverifikasi 100% sebelum kode *likelihood* dijalankan.
+- [x] Seluruh anggota tim memahami larangan menggabung dataset dengan rilis lain serta catatan pembaruan data `IC86-2012` s.d. `IC86-2014`.
