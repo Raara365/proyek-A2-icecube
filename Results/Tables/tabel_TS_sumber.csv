@@ -1,0 +1,4 @@
+sumber,TS_obs,ns_hat,N_dekat,k,M,p_pra_trial,sigma_pra_trial (satu sisi)
+TXS 0506+056,1.66,15.15,3725,766,10000,0.07669,1.43
+PKS 1424+240,8.182,36.167,2555,12,10000,0.0013,3.01
+dua sumber (TS maks),8.182,,,24,10000,0.0025 (pasca-trial),2.81
