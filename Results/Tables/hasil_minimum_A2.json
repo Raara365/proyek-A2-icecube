@@ -1,0 +1,113 @@
+{
+  "sumber": {
+    "TXS 0506+056": {
+      "ra_deg": 77.358185,
+      "dec_deg": 5.693148,
+      "N_dekat_radius": 3725,
+      "TS_obs": 1.6604351842183114,
+      "ns_hat": 15.150290016150512,
+      "k": 766,
+      "M": 10000,
+      "p_pra_trial": 0.0766923307669233,
+      "p_pra_trial_batas_atas_jika_k0": null,
+      "sigma_pra_trial_satu_sisi": 1.4276776518067096,
+      "frac_TS_nol_pseudo": 0.5634
+    },
+    "PKS 1424+240": {
+      "ra_deg": 216.751632,
+      "dec_deg": 23.80001,
+      "N_dekat_radius": 2555,
+      "TS_obs": 8.182395842560979,
+      "ns_hat": 36.16728011504802,
+      "k": 12,
+      "M": 10000,
+      "p_pra_trial": 0.0012998700129987,
+      "p_pra_trial_batas_atas_jika_k0": null,
+      "sigma_pra_trial_satu_sisi": 3.011484117417135,
+      "frac_TS_nol_pseudo": 0.5551
+    }
+  },
+  "dua_sumber": {
+    "TS_maks_obs": 8.182395842560979,
+    "sumber_pemilik_TS_maks": "PKS 1424+240",
+    "k": 24,
+    "M": 10000,
+    "p_pasca_trial": 0.0024997500249975004,
+    "sigma_pasca_trial_satu_sisi": 2.8070659793652184,
+    "trial_factor_efektif": 1.9230769230769234
+  },
+  "cek_dua_cara": {
+    "TXS 0506+056": {
+      "ns_uji": 5.0,
+      "lnL_rasio_manual_loop": 0.489414742970963,
+      "lnL_rasio_vektor": 0.48941474299983145,
+      "selisih": 2.886846317551317e-11,
+      "Nd_manual": 3725,
+      "Nd_vektor": 3725,
+      "cocok": true
+    },
+    "PKS 1424+240": {
+      "ns_uji": 5.0,
+      "lnL_rasio_manual_loop": 1.204440167973737,
+      "lnL_rasio_vektor": 1.204440168002625,
+      "selisih": 2.8888003100746573e-11,
+      "Nd_manual": 2555,
+      "Nd_vektor": 2555,
+      "cocok": true
+    }
+  },
+  "metadata": {
+    "waktu_jalan": "2026-11-24T11:25:04",
+    "seed_dasar": 42,
+    "skema_seed": "SeedSequence(seed).spawn(M): seed berbeda tiap pseudo-experiment",
+    "M": 10000,
+    "radius_deg": 5.0,
+    "nbin_sin_dec": 40,
+    "B_delta": "gabungan",
+    "faktor_sigma_terhadap_AngErr": 1.0,
+    "N_event_total": 1134450,
+    "musim": [
+      "IC40",
+      "IC59",
+      "IC79",
+      "IC86_I",
+      "IC86_II",
+      "IC86_III",
+      "IC86_IV",
+      "IC86_V",
+      "IC86_VI",
+      "IC86_VII"
+    ],
+    "event_per_musim": {
+      "IC40": 36900,
+      "IC59": 107011,
+      "IC79": 93133,
+      "IC86_I": 136244,
+      "IC86_II": 112858,
+      "IC86_III": 122541,
+      "IC86_IV": 127045,
+      "IC86_V": 129311,
+      "IC86_VI": 123657,
+      "IC86_VII": 145750
+    },
+    "versi": {
+      "python": "3.11.9",
+      "numpy": "2.4.6",
+      "scipy": "1.17.1",
+      "pandas": "3.1.1"
+    },
+    "checksum_sha256": {
+      "IC40_exp.csv": "23d633925cb22cccb9530376b1de51ccd3fa2696fc49c1955bc8a9dafef035a0",
+      "IC59_exp.csv": "55fb7cf070b7d9503c9d7a10a4d0e9100b6984c94fc57cf043b73190b22e1fcd",
+      "IC79_exp.csv": "b3c6f3a73e084fd2a2fec29d3396567a4ad9905ebc8c1959e8fbf1f1cf28d482",
+      "IC86_I_exp.csv": "13b59456c19e3668ae5dd1be2b987377c834fce1a7c2090a841860ce2a978854",
+      "IC86_II_exp.csv": "4870fd48f976d3f6911b961f697b66216ef0c5b740afd16ba91e930a4234f0db",
+      "IC86_III_exp.csv": "9e7fcc0e5b104eecc09ee665267de541133c8c350a9419784fff0fca3fcc51dc",
+      "IC86_IV_exp.csv": "0e2cfca510d89b9ca25115b051c941557373c313a72d605451854ab7540fd0e3",
+      "IC86_V_exp.csv": "12ee052ea205a96cd4599211a949269ef328f6733f44e91888283aeb7325bc56",
+      "IC86_VI_exp.csv": "1f4722a72af699757047fc8da2b6b9fac8e1ab27983a2fca8f51c3dc6b599755",
+      "IC86_VII_exp.csv": "7d0ae47595294a60c2a65b6eee63ff861776389bd502c10eeb8daefb8f45a2a2"
+    },
+    "catatan": "Koordinat sumber dari NED (diakses 20 November 2026). AngErr dipakai langsung sebagai sigma (Gerbang 0 no. 3)."
+  }
+}
