@@ -23,7 +23,7 @@ Dokumen ini memuat verifikasi perhitungan matematis independen untuk memastikan 
 
 ### B. Data 1 Event Nyata Uji di Dekat TXS 0506+056 (Dataset Terproses)
 
-*(Diambil dari kejadian nyata pada musim `IC59`, indeks baris `89559` pada `events_all_seasons.xlsx`, yang berada dalam kerucut pencarian $\psi_1 < 5,0^\circ$)*
+> Diambil dari kejadian nyata pada musim `IC59`, indeks baris `89559` pada `events_all_seasons.xlsx`, yang berada dalam kerucut pencarian $\psi_1 < 5,0^\circ$.
 
 * **Musim Observasi (`Season`):** `IC59`
 * **Waktu Kejadian (`MJD`):** $55163,97544865\text{ hari}$
@@ -48,7 +48,7 @@ Dokumen ini memuat verifikasi perhitungan matematis independen untuk memastikan 
 
      $$h(\sin\delta_1) = \frac{N_{\text{bin}}}{N_{\text{total}} \cdot \Delta(\sin\delta)} = \frac{50.345}{1.134.450 \times 0,05} = 0,8875666623$$
 
-     *(Memenuhi syarat normalisasi $\int_{-1}^{1} h(\sin\delta)\,d(\sin\delta) = 1$)*
+     > Memenuhi syarat normalisasi $\int_{-1}^{1} h(\sin\delta)\,d(\sin\delta) = 1$.
 
 ---
 
@@ -124,7 +124,7 @@ Karena detektor IceCube terletak tepat di Kutub Selatan geografis, penerimaan de
 
 $$B_1(\delta_1) = \frac{h(\sin\delta_1)}{2\pi}$$
 
-*(dengan syarat normalisasi penuh bola langit $\int_{-1}^{1} \int_{0}^{2\pi} B(\delta)\,d\alpha\,d(\sin\delta) = 1$)*
+> Memenuhi syarat normalisasi penuh bola langit $\int_{-1}^{1} \int_{0}^{2\pi} B(\delta)\,d\alpha\,d(\sin\delta) = 1$.
 
 * **Hasil Kerapatan Peluang Latar ($B_1$):**
 
@@ -146,7 +146,7 @@ $$\Delta\ln\mathcal{L}_1(n_s = 1) = \ln\left[1 + \frac{1}{1.134.450}\left(10.688
 
 ## 4. Tabel Perbandingan Manual vs Kode Python (Gerbang G2)
 
-| Kuantitas Fisis / Matematis | Hasil Hitung Manual | Keluaran Kode Python (`statistik.py`) | Selisih Relatif $\left\lvert \frac{X_{\text{kode}} - X_{\text{manual}}}{X_{\text{manual}}} \right\rvert$ | Status ($< 10^{-6}$) |
+| Kuantitas Fisis / Matematis | Hasil Hitung Manual | Keluaran Kode Python (`statistik.py`) | Selisih Relatif $\lvert (X_{\text{kode}} - X_{\text{manual}}) / X_{\text{manual}} \rvert$ | Status ($< 10^{-6}$) |
 | :--- | :---: | :---: | :---: | :---: |
 | $\psi_1$ ($\text{derajat}$) | $0,4658401983$ | $0,4658401983$ | $1,192 \times 10^{-16}$ | **Cocok** |
 | $\psi_1$ ($\text{radian}$) | $8,1304452493 \times 10^{-3}$ | $8,1304452493 \times 10^{-3}$ | $0,000 \times 10^{0}$ | **Cocok** |
