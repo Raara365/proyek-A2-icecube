@@ -89,5 +89,10 @@ Perhitungan ini disiapkan untuk menguji fungsi `angsep` dan `bangun_dlogL` pada 
      $$S_i = \frac{1}{1,22493 \times 10^{-3}\text{ sr}} \times e^{-0,31820} = 816,373 \times 0,72746 \approx 593,88\text{ sr}^{-1}$$
 
 ---
+
+## 4. Referensi
+1. Panduan Proyek Kelompok: *Analisis Data Neutrino IceCube, Fisika Partikel, Tema Nobel Fisika 2026* (Bab 5, Bab 6, Bab 7, Bab 8, dan Bab 9.2).
+2. IceCube Collaboration (2021), *IceCube Data for Neutrino Point-Source Searches Years 2008–2018*, `arXiv:2101.09836`.
+3. IceCube Collaboration (2020), *Time-integrated Neutrino Source Searches with 10 years of IceCube Data*, Phys. Rev. Lett. 124, 051103.
 4. IceCube Collaboration (2018), *Neutrino emission from the direction of the blazar TXS 0506+056 prior to the IceCube-170922A alert*, Science 361, 147 (`arXiv:1807.08794`).
 5. NASA/IPAC Extragalactic Database (NED), Caltech/JPL, data koordinat ekuatorial J2000 dan *redshift* objek `TXS 0506+056` serta `PKS 1424+240` (diakses 20 November 2026).
