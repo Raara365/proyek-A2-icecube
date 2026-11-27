@@ -23,7 +23,7 @@ Dokumen ini memuat verifikasi perhitungan matematis independen untuk memastikan 
 
 ### B. Data 1 Event Nyata Uji di Dekat TXS 0506+056 (Dataset Terproses)
 
-> Diambil dari kejadian nyata pada musim `IC59`, indeks baris `89559` pada `events_all_seasons.xlsx`, yang berada dalam kerucut pencarian $\psi_1 < 5,0^\circ$.
+> Diambil dari kejadian nyata pada musim `IC59`, indeks baris `89559` pada `events_all_seasons.parquet`, yang berada dalam kerucut pencarian $\psi_1 < 5,0^\circ$.
 
 * **Musim Observasi (`Season`):** `IC59`
 * **Waktu Kejadian (`MJD`):** $55163,97544865\text{ hari}$
