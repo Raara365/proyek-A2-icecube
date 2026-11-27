@@ -6,12 +6,12 @@
       "N_dekat_radius": 3725,
       "TS_obs": 1.6604351842183114,
       "ns_hat": 15.150290016150512,
-      "k": 766,
-      "M": 10000,
-      "p_pra_trial": 0.0766923307669233,
+      "k": 78,
+      "M": 1000,
+      "p_pra_trial": 0.07892107892107893,
       "p_pra_trial_batas_atas_jika_k0": null,
-      "sigma_pra_trial_satu_sisi": 1.4276776518067096,
-      "frac_TS_nol_pseudo": 0.5634
+      "sigma_pra_trial_satu_sisi": 1.4123662186494017,
+      "frac_TS_nol_pseudo": 0.588
     },
     "PKS 1424+240": {
       "ra_deg": 216.751632,
@@ -19,22 +19,22 @@
       "N_dekat_radius": 2555,
       "TS_obs": 8.182395842560979,
       "ns_hat": 36.16728011504802,
-      "k": 12,
-      "M": 10000,
-      "p_pra_trial": 0.0012998700129987,
+      "k": 1,
+      "M": 1000,
+      "p_pra_trial": 0.001998001998001998,
       "p_pra_trial_batas_atas_jika_k0": null,
-      "sigma_pra_trial_satu_sisi": 3.011484117417135,
-      "frac_TS_nol_pseudo": 0.5551
+      "sigma_pra_trial_satu_sisi": 2.878477014766146,
+      "frac_TS_nol_pseudo": 0.566
     }
   },
   "dua_sumber": {
     "TS_maks_obs": 8.182395842560979,
     "sumber_pemilik_TS_maks": "PKS 1424+240",
-    "k": 24,
-    "M": 10000,
-    "p_pasca_trial": 0.0024997500249975004,
-    "sigma_pasca_trial_satu_sisi": 2.8070659793652184,
-    "trial_factor_efektif": 1.9230769230769234
+    "k": 2,
+    "M": 1000,
+    "p_pasca_trial": 0.002997002997002997,
+    "sigma_pasca_trial_satu_sisi": 2.748109103229577,
+    "trial_factor_efektif": 1.5
   },
   "cek_dua_cara": {
     "TXS 0506+056": {
@@ -57,10 +57,10 @@
     }
   },
   "metadata": {
-    "waktu_jalan": "2026-11-24T11:25:04",
+    "waktu_jalan": "2026-11-27T14:18:24",
     "seed_dasar": 42,
     "skema_seed": "SeedSequence(seed).spawn(M): seed berbeda tiap pseudo-experiment",
-    "M": 10000,
+    "M": 1000,
     "radius_deg": 5.0,
     "nbin_sin_dec": 40,
     "B_delta": "gabungan",
@@ -91,10 +91,10 @@
       "IC86_VII": 145750
     },
     "versi": {
-      "python": "3.11.9",
-      "numpy": "2.4.6",
-      "scipy": "1.17.1",
-      "pandas": "3.1.1"
+      "python": "3.13.3",
+      "numpy": "2.2.5",
+      "scipy": "1.15.3",
+      "pandas": "2.3.0"
     },
     "checksum_sha256": {
       "IC40_exp.csv": "23d633925cb22cccb9530376b1de51ccd3fa2696fc49c1955bc8a9dafef035a0",
